@@ -12,6 +12,7 @@
     "resolveJsonModule": true,
     "noImplicitReturns": false,
     "noUnusedLocals": false,
+    "noImplicitAny": false,
     "outDir": "build",
     "lib": ["es6", "es7", "dom"],
     "noEmit": true,
