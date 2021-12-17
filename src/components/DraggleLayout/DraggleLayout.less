@@ -1,0 +1,28 @@
+.draggle-layout-root {
+  position: relative;
+  display: flex;
+  margin: 24px auto;
+  .draggle-layout-left {
+    height: 100%;
+    position: relative;
+    transition: width 200ms cubic-bezier(0.1, 0, 0, 1) 0s;
+    .draggle-layout-handler {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: auto;
+      height: 100%;
+
+      user-select: none;
+      color: #fff;
+      text-align: center;
+      cursor: ew-resize;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .draggle-layout-right {
+    flex: 1;
+  }
+}
