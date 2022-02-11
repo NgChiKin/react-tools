@@ -1,5 +1,5 @@
 import React from 'react';
-import DraggleLayout from './DraggleLayout';
+import DraggleLayout from '../DraggleLayout';
 
 const Index = () => {
   return (
