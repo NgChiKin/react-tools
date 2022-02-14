@@ -17,7 +17,7 @@ function useEmit<Events extends BaseEvents>() {
         console.log('emitter emit: ', type, args);
         em.emit(type, ...args);
       } else {
-        console.error(
+        console.warn(
           'Must be used within a subComponent of EventEmitterRc component !!!'
         );
       }
@@ -43,7 +43,7 @@ export function useEventEmitter<Events extends BaseEvents>() {
           console.log('em', em);
           em.add(type, listener);
         } else {
-          console.error(
+          console.warn(
             'Must be used within a subComponent of EventEmitterRc component !!!'
           );
         }
@@ -52,7 +52,7 @@ export function useEventEmitter<Events extends BaseEvents>() {
             console.log('emitter remove: ', type, listener.name);
             em.remove(type, listener);
           } else {
-            console.error(
+            console.warn(
               'Must be used within a subComponent of EventEmitterRc component !!!'
             );
           }
