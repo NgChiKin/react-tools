@@ -13,8 +13,7 @@ const Two = () => {
   const handleClick2 = () => {
     emit("reset", {
       title: 'form two',
-      name: 'two name'
-    })
+    }) 
   }
 
   return (
