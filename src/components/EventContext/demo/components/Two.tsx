@@ -1,10 +1,10 @@
 import { useEventEmitter } from '@components/EventContext/eventHooks';
 import React, { useState } from 'react';
-import { TodoEvents } from '../type';
+import { DemoEvents } from '../type';
 
 const Two = () => {
   const [two, setTwo] = useState('two');
-  const { emit } = useEventEmitter<TodoEvents>();
+  const { emit } = useEventEmitter<DemoEvents>();
 
   const handleClick = () => {
     setTwo('setTwo from  two');

@@ -1,10 +1,10 @@
 import { useEventEmitter } from '@components/EventContext/eventHooks';
 import React, { useState, useEffect, useContext } from 'react';
-import { TodoEvents } from '../type';
+import { DemoEvents } from '../type';
 
 const One = (props, context) => {
   const [one, setOne] = useState('one');
-  const { useListener } = useEventEmitter<TodoEvents>();
+  const { useListener } = useEventEmitter<DemoEvents>();
 
   useListener(
     'reset',

@@ -1,9 +1,9 @@
-export interface TodoEntity {
+export interface Entity {
   title: string;
 }
 
 import { BaseEvents } from "@utils/EventEmitter";
 
-export interface TodoEvents extends BaseEvents {
-  addTodo: [entity: TodoEntity];
+export interface DemoEvents extends BaseEvents {
+  addTodo: [entity: Entity];
 }
